@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">   <link rel="stylesheet" href="CSS/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <nav id="desktop">
+    <div class="nav-items">
+    <div>
+      <img src="images\logo.svg" alt="logo">
+    </div>
+    <div class="nav-ul">
+      <ul>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Collections</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Men</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Women</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="nav-user">
+      <a class="cart_icon" href="http://" target="_blank" rel="noopener noreferrer"><img src="images\icon-cart.svg" alt="cart icon"></a>
+      
+      <a id="try" href="http://" target="_blank" rel="noopener noreferrer"><img id="nav-user-icon" src="images\image-avatar.png" alt="user icon"></a>
+    </div>
+    <p id="cart_counter"></p>
+  </nav>
+
+  <nav id="mobile">
+    <div class="nav-items hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <img src="images\logo.svg" alt="">
+      <ul class="menu__box">
+        <li><a class="menu__item" href="http://" target="_blank" rel="noopener noreferrer">Collections</a></li>
+        <li><a class="menu__item" href="http://" target="_blank" rel="noopener noreferrer">Men</a></li>
+        <li><a class="menu__item" href="http://" target="_blank" rel="noopener noreferrer">Women</a></li>
+        <li><a class="menu__item" href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+        <li><a class="menu__item" href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="nav-user">
+      <a class="cart_icons">
+        <img src="images\icon-cart.svg" alt="cart icon">
+      </a>
+      <img id="nav-user-icon" src="images\image-avatar.png" alt="user icon">
+    </div>
+    <p id="cart_counter"></p>
+  </nav>
+
+  <menu>
+    <section class="menu-img">
+      <div id="menu-img-principal">
+        <img src="images\image-product-1.jpg" alt="principal sneaker">
+      </div>
+      <div class="menu-img-option">
+        <img class="menu-image img1" src="images\image-product-1-thumbnail.jpg" alt="">
+        <img class="menu-image" src="images\image-product-2-thumbnail.jpg" alt="">
+        <img class="menu-image" src="images\image-product-3-thumbnail.jpg" alt="">
+        <img class="menu-image" src="images\image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </section>
+    <section class="menu-info">
+      <h4>SNEAKER COMPANY</h4>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="menu-info-purchase">
+        <div id="discount">
+          <h2>$125.00</h2>
+          <p id="discount">50%</p>
+        </div>
+        <span>$250.00</span>
+      </div>
+      <div class="btn-collection">
+        <div class="btn-purchase">
+          <button class="btn plus"> <img src="images\icon-plus.svg" alt="plus icon"></button>
+          <p class="btn counter">0</p>
+          <button class="btn minus"><img src="images\icon-minus.svg" alt="menus icon"></button>
+        </div>
+        <button class="btn add-to-cart"><img src="images\icon-cart.svg" alt=""> Add to cart</button>
+      </div>  
+    </section>
+
+    <div id="cart_show">
+      <h4>Cart</h4>
+      <div class="cart_show_line"></div>
+        <p id="cart_show_empty">Your cart is empty</p>
+        <div id="shop_shown">
+          <div class="shop">
+            <img id="shop_img" src="images\image-product-1-thumbnail.jpg" alt="" srcset="">
+            <div class="shop_flex">
+              <h5>Fall Limited Edition Sneakers</h5>
+              <div class="shop_show_info">
+                <p>$125 x<p id="total_item"></p><p> </p><span id="total_price"></span></p>
+              </div>  
+            </div> 
+            <img id="delete-btn" src="images\icon-delete.svg" alt="" srcset="" style="width: 5%; height: 30%; align-self: center;">
+          </div>
+        <button class="btn checkout">Checkout</button>
+      </div>
+    </div>
+
+  </menu>
+  <script type="text/javascript" src="JS/functions.js"></script>
+</body>
+</html>
